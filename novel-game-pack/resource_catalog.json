@@ -1,0 +1,268 @@
+{
+  "snapshot_date": "2026-11-19",
+  "purpose": "novel-to-game industrial resource catalog",
+  "recommended_default_stack": {
+    "prototype": [
+      "Shanyin-ai/Story-to-game",
+      "JSON",
+      "browser"
+    ],
+    "web_production": [
+      "inkle/ink",
+      "y-lohse/inkjs",
+      "React or Phaser",
+      "Playwright"
+    ],
+    "godot": [
+      "godotengine/godot",
+      "dialogic-godot/dialogic"
+    ],
+    "unity": [
+      "inkle/ink",
+      "YarnSpinnerTool/YarnSpinner-Unity",
+      "ShiJbey/Anansi"
+    ],
+    "visual_novel": [
+      "renpy/renpy",
+      "Monogatari/Monogatari"
+    ],
+    "ai_gm_reference": [
+      "Sagesheep/NarrativeEngine-P",
+      "joonspk-research/generative_agents",
+      "google-deepmind/concordia"
+    ]
+  },
+  "resources": [
+    {
+      "id": "story-to-game",
+      "name": "Story-to-game",
+      "url": "https://github.com/Shanyin-ai/Story-to-game",
+      "license": "MIT",
+      "approx_stars": 498,
+      "category": "novel-to-branching-game",
+      "maturity": "prototype",
+      "role": "Nine-step adaptation workflow, branching JSON, single-file HTML runtime, validation",
+      "recommendation": "Primary reference for the novel-to-game skill",
+      "validation_test": {
+        "sample": "测试案例-成人日.json",
+        "nodes": 361,
+        "story_nodes": 354,
+        "ending_nodes": 7,
+        "achievements": 9,
+        "reachable_nodes": 361,
+        "result": "passed",
+        "windows_note": "Default GBK console crashes while printing an emoji; PYTHONUTF8=1 passes."
+      }
+    },
+    {
+      "id": "ink",
+      "name": "ink",
+      "url": "https://github.com/inkle/ink",
+      "license": "MIT",
+      "approx_stars": 5025,
+      "category": "narrative-scripting",
+      "maturity": "production",
+      "role": "Branching narrative language and runtime",
+      "recommendation": "Best production choice for complex choice and state logic"
+    },
+    {
+      "id": "inkjs",
+      "name": "inkjs",
+      "url": "https://github.com/y-lohse/inkjs",
+      "license": "MIT",
+      "approx_stars": 668,
+      "category": "web-runtime",
+      "maturity": "production",
+      "role": "JavaScript runtime for Ink",
+      "recommendation": "Use for a browser narrative game"
+    },
+    {
+      "id": "yarn-spinner",
+      "name": "Yarn Spinner",
+      "url": "https://github.com/YarnSpinnerTool/YarnSpinner",
+      "license": "MIT",
+      "approx_stars": 2878,
+      "category": "dialogue-runtime",
+      "maturity": "production",
+      "role": "Dialogue and narrative delivery for Unity, Godot and Unreal",
+      "recommendation": "Use when dialogue is primary and gameplay lives in the engine"
+    },
+    {
+      "id": "dialogic",
+      "name": "Dialogic",
+      "url": "https://github.com/dialogic-godot/dialogic",
+      "license": "MIT",
+      "approx_stars": 6180,
+      "category": "godot-visual-novel",
+      "maturity": "production-capable",
+      "role": "Dialogue, visual novel, characters and timeline",
+      "recommendation": "Default Godot choice"
+    },
+    {
+      "id": "anansi",
+      "name": "Anansi",
+      "url": "https://github.com/ShiJbey/Anansi",
+      "license": "MIT",
+      "approx_stars": 78,
+      "category": "unity-visual-novel",
+      "maturity": "early",
+      "role": "Simulation-driven visual novel using Ink",
+      "recommendation": "Study state-first VN architecture"
+    },
+    {
+      "id": "storyboard",
+      "name": "Storyboard",
+      "url": "https://github.com/lazerwalker/storyboard",
+      "license": "MIT",
+      "approx_stars": 125,
+      "category": "storylet-engine",
+      "maturity": "academic",
+      "role": "Embeddable multilinear narrative engine",
+      "recommendation": "Research storylets; not a turnkey production engine"
+    },
+    {
+      "id": "throne",
+      "name": "Throne",
+      "url": "https://github.com/t-mw/throne",
+      "license": "MIT",
+      "approx_stars": 54,
+      "category": "rule-based-story-logic",
+      "maturity": "early",
+      "role": "Fast rule language for game prototyping and story logic",
+      "recommendation": "Reference for declarative state rules"
+    },
+    {
+      "id": "narrative-engine-p",
+      "name": "NarrativeEngine-P",
+      "url": "https://github.com/Sagesheep/NarrativeEngine-P",
+      "license": "MIT",
+      "approx_stars": 128,
+      "category": "ai-gm",
+      "maturity": "early",
+      "role": "Self-hosted AI GM with persistent memory and world state",
+      "recommendation": "Reference architecture; validate security and reliability before shipping"
+    },
+    {
+      "id": "booknlp",
+      "name": "BookNLP",
+      "url": "https://github.com/booknlp/booknlp",
+      "license": "MIT",
+      "approx_stars": 950,
+      "category": "source-ingestion",
+      "maturity": "research",
+      "role": "NLP pipeline for books",
+      "recommendation": "Use for character and event extraction, not final canon decisions"
+    },
+    {
+      "id": "ai-town",
+      "name": "AI Town",
+      "url": "https://github.com/a16z-infra/ai-town",
+      "license": "MIT",
+      "approx_stars": 10828,
+      "category": "agent-simulation",
+      "maturity": "starter-kit",
+      "role": "AI characters in a simulated town",
+      "recommendation": "Use for ambient NPC simulation, not main plot control"
+    },
+    {
+      "id": "generative-agents",
+      "name": "Generative Agents",
+      "url": "https://github.com/joonspk-research/generative_agents",
+      "license": "Apache-2.0",
+      "approx_stars": 22393,
+      "category": "agent-research",
+      "maturity": "research",
+      "role": "Memory, reflection and planning agents",
+      "recommendation": "Research reference only"
+    },
+    {
+      "id": "concordia",
+      "name": "Concordia",
+      "url": "https://github.com/google-deepmind/concordia",
+      "license": "Apache-2.0",
+      "approx_stars": 1909,
+      "category": "social-simulation",
+      "maturity": "research",
+      "role": "Generative social simulation",
+      "recommendation": "Research NPC societies and state modeling"
+    },
+    {
+      "id": "tracery",
+      "name": "Tracery",
+      "url": "https://github.com/galaxykate/tracery",
+      "license": "Apache-2.0",
+      "approx_stars": 2222,
+      "category": "procedural-text",
+      "maturity": "production-capable",
+      "role": "Story grammar and controlled text variation",
+      "recommendation": "Use for low-stakes textual variety"
+    },
+    {
+      "id": "renpy",
+      "name": "Ren'Py",
+      "url": "https://github.com/renpy/renpy",
+      "license": "see official license",
+      "approx_stars": 7037,
+      "category": "visual-novel-engine",
+      "maturity": "production",
+      "role": "Visual novel authoring and distribution",
+      "recommendation": "Strong VN choice; review official license for commercial release"
+    },
+    {
+      "id": "monogatari",
+      "name": "Monogatari",
+      "url": "https://github.com/Monogatari/Monogatari",
+      "license": "MIT",
+      "approx_stars": 896,
+      "category": "web-visual-novel",
+      "maturity": "production-capable",
+      "role": "Web visual novel engine",
+      "recommendation": "Consider for browser-native visual novels"
+    },
+    {
+      "id": "fungus",
+      "name": "Fungus",
+      "url": "https://github.com/snozbot/fungus",
+      "license": "MIT",
+      "approx_stars": 1959,
+      "category": "unity-interactive-fiction",
+      "maturity": "production-capable",
+      "role": "Illustrated interactive fiction in Unity",
+      "recommendation": "Fast Unity prototype when Ink is unnecessary"
+    },
+    {
+      "id": "phaser",
+      "name": "Phaser",
+      "url": "https://github.com/phaserjs/phaser",
+      "license": "MIT",
+      "approx_stars": 40744,
+      "category": "web-game-engine",
+      "maturity": "production",
+      "role": "2D browser games",
+      "recommendation": "Use when narrative needs maps, objects and movement"
+    },
+    {
+      "id": "godot",
+      "name": "Godot",
+      "url": "https://github.com/godotengine/godot",
+      "license": "MIT",
+      "approx_stars": 120391,
+      "category": "game-engine",
+      "maturity": "production",
+      "role": "2D and 3D game engine",
+      "recommendation": "Use for a full desktop or mobile game"
+    },
+    {
+      "id": "awesome-ai-for-games",
+      "name": "Awesome AI for Games",
+      "url": "https://github.com/Eurekaleo/awesome-ai-for-games",
+      "license": "MIT",
+      "approx_stars": 391,
+      "category": "research-index",
+      "maturity": "survey",
+      "role": "Research map for AI across the game lifecycle",
+      "recommendation": "Use to expand AI design and evaluation references"
+    }
+  ]
+}
+
